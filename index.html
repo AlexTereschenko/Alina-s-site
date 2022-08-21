@@ -7,20 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="A.Tereschenko" email="freelancer.ua.1992@gmail.com">
 
-    <title>Template</title>
-    <link rel="shortcut icon" href="img/shortcut.svg">
+    <title>IN THE LENS</title>
+    <link rel="shortcut icon" href="img/icon/shortcut.svg">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="css/reseter.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <div class="wrapper">
         
+
+        <div class="fotorama" data-ratio="800/600" data-allowfullscreen="native" data-loop="true" data-transition="slide"
+        data-clicktransition="crossfade" data-fit="cover" data-keyboard="true" data-autoplay="5000" data-stopautoplayontouch="true">
+          <img src="img/locations/1.jpg">
+          <img src="img/locations/2.jpg">
+          <img src="img/locations/3.jpg">
+          <img src="img/locations/4.jpg">
+          <img src="img/locations/5.jpg">
+          <img src="img/locations/6.jpg">
+          <img src="img/locations/7.jpg">
+          <img src="img/locations/8.jpg">
+        </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
     <script src="js/script.js"></script>
 </body>
