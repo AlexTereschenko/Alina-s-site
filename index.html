@@ -10,7 +10,7 @@
     <title>IN THE LENS</title>
     <link rel="shortcut icon" href="img/icon/shortcut.svg">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -19,25 +19,122 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <div class="wrapper">
-        
+        <header>
+            <nav class="menu" id="start">
+                <a href="#start" class="logo"></a>
+                
+                <div class="folderContainer">
+                    <!-- <div class="menuToggle"></div>  -->
 
-        <div class="fotorama" data-ratio="800/600" data-allowfullscreen="native" data-loop="true" data-transition="slide"
-        data-clicktransition="crossfade" data-fit="cover" data-keyboard="true" data-autoplay="5000" data-stopautoplayontouch="true">
-          <img src="img/locations/1.jpg">
-          <img src="img/locations/2.jpg">
-          <img src="img/locations/3.jpg">
-          <img src="img/locations/4.jpg">
-          <img src="img/locations/5.jpg">
-          <img src="img/locations/6.jpg">
-          <img src="img/locations/7.jpg">
-          <img src="img/locations/8.jpg">
-        </div>
+                    <ul class="navigation_header">
+                        <li><a href="#location" class="btn-underline">Локації</a></li>
+                        <li><a href="#services" class="btn-underline">Послуги</a></li>
+                        <li><a href="#team" class="btn-underline">Команда</a></li>
+                    </ul>
+                    <ul class="navigation_header">
+                        <li><a href="#portfolio" class="btn-underline">Портфоліо</a></li>
+                        <li><a href="#prices" class="btn-underline">Ціни</a></li>
+                        <li><a href="#benefits" class="btn-underline">Переваги</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+
+                <section id="top">
+                    <h1>Під прицілом камери</h1>
+                    <a href="#feedback" class="btn">Забронювати</a>
+                </section>
+
+                <section id="locations" class="section">
+
+                    <div class="fotorama" data-width="950px" data-ratio="1.59" data-allowfullscreen="native" data-loop="true" data-transition="slide"
+                    data-clicktransition="crossfade" data-fit="cover" data-keyboard="true" data-autoplay="5000" data-stopautoplayontouch="true">
+                        <img src="img/locations/1.jpg">
+                        <img src="img/locations/2.jpg">
+                        <img src="img/locations/3.jpg">
+                        <img src="img/locations/4.jpg">
+                        <img src="img/locations/5.jpg">
+                        <img src="img/locations/6.jpg">
+                        <img src="img/locations/7.jpg">
+                        <img src="img/locations/8.jpg">
+                    </div>
+                </section>
+
+                <section id="services" class="section">
+
+                </section>
+
+                <section id="team" class="section">
+
+                </section>
+
+                <section id="prices" class="section">
+
+                </section>
+
+                <section id="portfolio" class="section">
+
+                </section>
+
+                <section id="benefits" class="section">
+
+                </section>
+
+                <section class="bg">
+                    <img src="img/bg/header.jpg" alt="" class="headerBg">
+                    <img src="img/bg/location.jpg" alt="" class="locationBg">
+                    <span class="teamBg"></span>
+                    <span class="benefitsBg"></span>
+                </section>
+
+            </article>
+
+            <aside>
+                
+            </aside>
+
+        </main>
+
+        <!-- <footer id="footer">
+            <div class="left_wrapper _animItem _anim_scale _animNoHide">
+                <img src="./img/icon/Logo.svg" alt="MNTN logo">
+
+                <p class="under-logo-text">
+                    Get out there & discover your next slope, mountain & destination!
+                </p>
+
+                <p class="copyright">
+                    Copyright 2019 MNTN, Inc. Terms & Privacy
+                </p>
+            </div>
+
+            <div class="right_wrapper">
+                <ul class="blog _animItem _animNoHide">
+                    <span class="_anim_sideWalk">More on The Blog</span>
+                    <li class="_anim_sideWalk"><a href="#" class="btn-underline">About MNTN</a></li>
+                    <li class="_anim_sideWalk"><a href="#" class="btn-underline">Contributors & Writers</a></li>
+                    <li class="_anim_sideWalk"><a href="#" class="btn-underline">Write For Us</a></li>
+                    <li class="_anim_sideWalk"><a href="#" class="btn-underline">Contact Us</a></li>
+                    <li class="_anim_sideWalk"><a href="#" class="btn-underline">Privacy Policy</a></li>
+                </ul>
+    
+                <ul class="MNTN _animItem _animNoHide">
+                    <span class="_anim_sideWalk">More on MNTN</span>
+                    <li class="_anim_sideWalk"><a href="#" class="btn-underline">The Team</a></li>
+                    <li class="_anim_sideWalk"><a href="#" class="btn-underline">Jobs</a></li>
+                    <li class="_anim_sideWalk"><a href="#" class="btn-underline">Press</a></li>
+                </ul>
+            </div>
+        </footer> -->
+        
     </div>
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"

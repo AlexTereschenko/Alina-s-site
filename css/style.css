@@ -1,0 +1,195 @@
+:root {
+    --orange: #EE821E;
+    --dark: #2F2828;
+    --white: #F8F8F8;
+    --background-dark: #000;
+    --background-light: #fff;
+}
+
+* {
+    /* outline: 2px solid red; */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    background: var(--background-dark);
+
+    font-size: 16px;
+    line-height: 1.2rem;
+    font-weight: 400;
+}
+
+.wrapper {
+    width: 100%;
+    background: var(--background-light);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 100px 0;
+}
+
+header { 
+    /* position: fixed;
+    top: 0; */
+    width: inherit;
+    z-index: 100;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: inherit;
+    background: var(--background-light);
+}
+
+.logo {
+    background-image: url(/img/Icon/logo-nav/normal.svg);
+    width: 124px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.logo:hover{
+    animation: 1.0s logoHead ease-out;
+}
+
+@keyframes logoHead {
+    0% {
+        background-image: url(/img/Icon/logo-nav/normal.svg);
+    }
+
+    50% {
+        background-image: url(/img/Icon/logo-nav/hower.svg);
+    }
+
+    100% {
+        background-image: url(/img/Icon/logo-nav/end.svg);
+    }
+}
+
+.menu .folderContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 364px;
+}
+
+.navigation_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    gap: 60px;
+}
+
+.btn-underline {
+    font-family: 'Rubik', sans-serif;
+    color: var(--dark);
+    position: relative;
+}
+
+.btn-underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -1px;
+    left: 0;
+    background-color: var(--dark);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.btn-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.btn-underline:hover {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+article {
+    height: 2445px;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    height: inherit;
+}
+
+.teamBg {
+    display: block;
+    height: 2800px;
+    width: 100%;
+    background: #fff;
+}
+
+.benefitsBg {
+    display: block;
+    height: 2800px;
+    width: 100%;
+    background: #000;
+}
+
+#top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: #111111; */
+    position: relative;
+    height: 700px;
+    z-index: 10;
+}
+
+
+
+.location {
+    top: 700px;
+}
+
+h1 {
+    position: relative;
+    top: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #F8F8F8;
+    margin: 461px 0 30px;
+}
+
+.btn {
+    position: relative;
+    font-size: 1rem;
+    color: var(--white);
+    background: var(--orange);
+    border: 3px solid #EE821E;
+    border-radius: 4px;
+    padding: 19px 52px;
+}
+
+.btn:hover {
+    color: var(--orange);
+    background: transparent;
+    transition: 0.5s ease-in-out;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
