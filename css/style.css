@@ -214,5 +214,10 @@ h1 {
 
 .fotorama__fullscreen-icon {
     background: url(/img/Icon/deploy.svg) no-repeat;
-    background-position: 0 0 !important;
+    background-position: 5px 5px !important;
+}
+
+.fotorama__arr:hover, .fotorama__fullscreen-icon:hover {
+    filter: brightness(0) saturate(100%) invert(55%) sepia(74%) saturate(2263%) hue-rotate(353deg) brightness(102%) contrast(87%);
+    transition: 0.5s;
 }
