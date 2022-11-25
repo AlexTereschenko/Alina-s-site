@@ -1,1 +1,1 @@
-console.log('hello world');
+const sayHello = (name) => console.log('hello world sad '+name);
